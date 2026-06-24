@@ -1,0 +1,111 @@
+<html>
+	<head>
+		<style>
+			#div1{
+				border:3px solid green;
+				height:15%;
+				background-color:green;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+			#div2{
+				border:3px solid red;
+				height:70%;
+				background-color:yellow;
+ 				text-align:center;
+			}
+			#div3{
+				border:3px solid blue;
+				height:15%;
+				background-color:green;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+			}
+			b{
+				font-size:3em;
+				color:white;
+			}
+			button{
+				width:120px;
+				height:50px;
+				background-color:yellowgreen;
+				font-size:2em;
+				color:green;
+				margin:auto;
+				margin-top:auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id='div1'><b>이미지 제어</b></div>
+		<div id='div2'>
+			<img id='imgView1' src='' style='width:250px; height:250px; margin:auto;'>
+			<img id='imgView2' src='' style='width:250px; height:250px; margin:auto;'>
+			<img id='imgView3' src='' style='width:250px; height:250px; margin:auto;'>
+			<img id='imgView4' src='' style='width:250px; height:250px; margin:auto;'>
+			<img id='imgView5' src='' style='width:250px; height:250px; margin:auto;'>
+			<img id='imgView6' src='' style='width:250px; height:250px; margin:auto;'>
+			<br>
+
+			<button onclick='get1();'>1</button>
+			<button onclick='get2();'>2</button>
+			<button onclick='get3();'>3</button>
+			<button onclick='get4();'>4</button>
+			<button onclick='get5();'>5</button>
+			<button onclick='get6();'>6</button><br>
+
+			<button onclick='del1();'>DEL1</button>
+			<button onclick='del2();'>DEL2</button>
+			<button onclick='del3();'>DEL3</button>
+			<button onclick='del4();'>DEL4</button>
+			<button onclick='del5();'>DEL5</button>
+			<button onclick='del6();'>DEL6</button>
+
+		</div>
+		<div id='div3'><b>한국폴리텍대학</b></div>
+		<script>
+			const img1=document.getElementById('imgView1');
+			const img2=document.getElementById('imgView2');
+			const img3=document.getElementById('imgView3');
+			const img4=document.getElementById('imgView4');
+			const img5=document.getElementById('imgView5');
+			const img6=document.getElementById('imgView6');
+
+			function get1()
+			{	img1.src='강아지2.png';	}
+			function del1()
+			{	img1.src='';	}
+			function get2()
+			{	img2.src='강아지3.png';	}
+			function del2()
+			{	img2.src='';	}
+			function get3()
+			{	img3.src='강아지5.png';	}
+			function del3()
+			{	img3.src='';	}
+			function get4()
+			{	img4.src='고양이1.png';	}
+			function del4()
+			{	img4.src='';	}
+			function get5()
+			{	img5.src='고양이4.png';	}
+			function del5()
+			{	img5.src='';	}
+			function get6()
+			{	img6.src='고양이6.png';	}
+			function del6()
+			{	img6.src='';	}
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
